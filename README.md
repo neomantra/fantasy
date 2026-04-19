@@ -9,7 +9,7 @@
 
 Build AI agents with Go. Multi-provider, multi-model, one API.
 
-1. Choose a model and provider
+1. Choose a model and [provider](./providers/README.md)
 2. Add some tools
 3. Compile to native machine code and let it rip
 
@@ -63,6 +63,8 @@ fmt.Println(result.Response.Content.Text())
 ## Multi-model? Multi-provider?
 
 Yeah! Fantasy is designed to support a wide variety of providers and models under a single API. While many providers such as Microsoft Azure, Amazon Bedrock, and OpenRouter have dedicated packages in Fantasy, many others work just fine with `openaicompat`, the generic OpenAI-compatible layer. That said, if you find a provider that’s not compatible and needs special treatment, please let us know in an issue (or open a PR).
+
+See the [providers catalog](./providers/README.md) for the full list of supported providers.
 
 ## Work in Progress
 
